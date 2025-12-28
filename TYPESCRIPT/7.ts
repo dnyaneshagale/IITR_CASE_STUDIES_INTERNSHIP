@@ -7,7 +7,8 @@ interface Staff {
 }
 
 let staffMembers : Staff[] = [{
-id : 1, name : "Dnyanesh", role : Role.Admin}
+id : 1, name : "Dnyanesh", role : Role.Admin},
+    {id : 2, name : "Shyam", role : Role.Doctor}
 ];
 
 function printSummary(staff:Staff) {

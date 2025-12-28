@@ -34,7 +34,7 @@ function fail(): never {
 }
 
 // Challenge for me
-function processTransaction(amount: number, description?: string, isCredit: boolean = false): never | void {
+function processTransaction(amount: number, isCredit: boolean, description?: string): never | void {
     if (amount < 0) {
         throw new Error("Amount cannot be negative");
     }
@@ -52,7 +52,7 @@ let amount: number = 5000;
 let description: string | undefined = undefined;
 let isCredit: boolean = true;
 
-processTransaction(amount, description, isCredit);
+processTransaction(amount, isCredit);
 
 /*
 KEY TAKEAWAYS :
